@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Cek Stunting</string>
+    <string name="lihat_artik">Lihat artikel\nlainnya</string>
+    <string name="riwayat_pen">Riwayat\npengukuran</string>
+    <string name="grafik">Grafik</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="jenis_kelamin_prompt">Pilih Jenis Kelamin Anak</string>
+
+    <string-array name="jenis_kelamin_anak">
+        <item>Pilih jenis kelamin anak</item>
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+</resources>

@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignupActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/sv_signup"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_signup"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120px"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/product_sans_regular"
+                android:text="Sepertinya kamu belum punya akun"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="40sp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="80dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints,RtlCompat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_username"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/product_sans_regular"
+                android:lines="2"
+                android:text="Daftarkan akun\nkamu"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@id/tv_signup"
+                android:layout_marginTop="20dp"
+                app:layout_constraintBottom_toTopOf="@id/et_username"
+                app:layout_constraintStart_toStartOf="@id/et_username" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_username"
+                android:layout_width="300dp"
+                android:layout_height="51.43dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="21.04px"
+                android:background="@drawable/rectangle_one"
+                android:fontFamily="@font/product_sans_regular"
+                android:hint="Username"
+                android:includeFontPadding="true"
+                android:inputType="text"
+                android:paddingStart="14.96dp"
+                android:singleLine="true"
+                android:textColor="#686868"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@id/et_email"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="HardcodedText,MissingConstraints,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_email"
+                android:layout_width="300dp"
+                android:layout_height="51.43dp"
+                android:layout_below="@id/et_username"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="21.04px"
+                android:background="@drawable/rectangle_one"
+                android:fontFamily="@font/product_sans_regular"
+                android:hint="Email"
+                android:includeFontPadding="true"
+                android:inputType="textEmailAddress"
+                android:paddingStart="14.96dp"
+                android:singleLine="true"
+                android:textColor="#686868"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_username"
+                tools:ignore="MissingConstraints,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_nohp"
+                android:layout_width="300dp"
+                android:layout_height="51.43dp"
+                android:layout_below="@id/et_username"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="21.04px"
+                android:background="@drawable/rectangle_one"
+                android:fontFamily="@font/product_sans_regular"
+                android:hint="No. Handphone"
+                android:includeFontPadding="true"
+                android:inputType="textEmailAddress"
+                android:paddingStart="14.96dp"
+                android:singleLine="true"
+                android:textColor="#686868"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_email"
+                tools:ignore="MissingConstraints,RtlSymmetry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/product_sans_regular"
+                android:lines="2"
+                android:text="Daftarkan infromasi\npribadimu"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@id/et_firstname"
+                app:layout_constraintStart_toStartOf="@id/et_firstname"
+                app:layout_constraintTop_toBottomOf="@id/et_nohp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_firstname"
+                android:layout_width="300dp"
+                android:layout_height="51.43dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="21.04px"
+                android:background="@drawable/rectangle_one"
+                android:fontFamily="@font/product_sans_regular"
+                android:hint="Nama Depan"
+                android:includeFontPadding="true"
+                android:inputType="text"
+                android:paddingStart="14.96dp"
+                android:singleLine="true"
+                android:textColor="#686868"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@id/et_lastname"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="HardcodedText,MissingConstraints,RtlSymmetry" />
+
+<!--            <androidx.appcompat.widget.AppCompatEditText-->
+<!--                android:id="@+id/et_middlename"-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="51.43dp"-->
+<!--                android:layout_below="@id/et_username"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginBottom="21.04px"-->
+<!--                android:background="@drawable/rectangle_one"-->
+<!--                android:fontFamily="@font/product_sans_regular"-->
+<!--                android:hint="Nama Tengah"-->
+<!--                android:includeFontPadding="true"-->
+<!--                android:inputType="text"-->
+<!--                android:paddingStart="14.96dp"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="#686868"-->
+<!--                android:textSize="15sp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/et_firstname"-->
+<!--                tools:ignore="MissingConstraints,RtlSymmetry" />-->
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_lastname"
+                android:layout_width="300dp"
+                android:layout_height="51.43dp"
+                android:layout_below="@id/et_username"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="21.04px"
+                android:background="@drawable/rectangle_one"
+                android:fontFamily="@font/product_sans_regular"
+                android:hint="Nama Belakang"
+                android:includeFontPadding="true"
+                android:inputType="text"
+                android:paddingStart="14.96dp"
+                android:singleLine="true"
+                android:textColor="#686868"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_firstname"
+                tools:ignore="MissingConstraints,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_jk"
+                android:layout_width="300dp"
+                android:layout_height="51.43dp"
+                android:layout_below="@id/et_username"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="21.04px"
+                android:background="@drawable/rectangle_one"
+                android:fontFamily="@font/product_sans_regular"
+                android:hint="Jenis Kelamin"
+                android:includeFontPadding="true"
+                android:inputType="text"
+                android:paddingStart="14.96dp"
+                android:singleLine="true"
+                android:textColor="#686868"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_lastname"
+                tools:ignore="MissingConstraints,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_umur"
+                android:layout_width="300dp"
+                android:layout_height="51.43dp"
+                android:layout_below="@id/et_username"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="21.04px"
+                android:background="@drawable/rectangle_one"
+                android:fontFamily="@font/product_sans_regular"
+                android:hint="Usia (Tahun)"
+                android:includeFontPadding="true"
+                android:inputType="text"
+                android:paddingStart="14.96dp"
+                android:singleLine="true"
+                android:textColor="#686868"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_jk"
+                tools:ignore="MissingConstraints,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_tinggi_ortu"
+                android:layout_width="300dp"
+                android:layout_height="51.43dp"
+                android:layout_below="@id/et_username"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="21.04px"
+                android:background="@drawable/rectangle_one"
+                android:fontFamily="@font/product_sans_regular"
+                android:hint="Tinggi Badan (cm)"
+                android:includeFontPadding="true"
+                android:inputType="text"
+                android:paddingStart="14.96dp"
+                android:singleLine="true"
+                android:textColor="#686868"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_umur"
+                tools:ignore="MissingConstraints,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_berat_ortu"
+                android:layout_width="300dp"
+                android:layout_height="51.43dp"
+                android:layout_below="@id/et_username"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="21.04px"
+                android:background="@drawable/rectangle_one"
+                android:fontFamily="@font/product_sans_regular"
+                android:hint="Berat Badan (kg)"
+                android:includeFontPadding="true"
+                android:inputType="text"
+                android:paddingStart="14.96dp"
+                android:singleLine="true"
+                android:textColor="#686868"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_tinggi_ortu"
+                tools:ignore="MissingConstraints,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_riwayat_penyakit_ortu"
+                android:layout_width="300dp"
+                android:layout_height="51.43dp"
+                android:layout_below="@id/et_username"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="21.04px"
+                android:background="@drawable/rectangle_one"
+                android:fontFamily="@font/product_sans_regular"
+                android:hint="Riwayat Penyakit (isi ''-'' jika tidak ada)"
+                android:includeFontPadding="true"
+                android:inputType="text"
+                android:paddingStart="14.96dp"
+                android:singleLine="true"
+                android:textColor="#686868"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_berat_ortu"
+                tools:ignore="MissingConstraints,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_nik"
+                android:layout_width="300dp"
+                android:layout_height="51.43dp"
+                android:layout_below="@id/et_username"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="21.04px"
+                android:background="@drawable/rectangle_one"
+                android:fontFamily="@font/product_sans_regular"
+                android:hint="NIK (Nomor Induk Kependudukan)"
+                android:includeFontPadding="true"
+                android:inputType="number"
+                android:paddingStart="14.96dp"
+                android:singleLine="true"
+                android:textColor="#686868"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_riwayat_penyakit_ortu"
+                tools:ignore="MissingConstraints,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_jalan"
+                android:layout_width="300dp"
+                android:layout_height="51.43dp"
+                android:layout_below="@id/et_username"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="21.04px"
+                android:background="@drawable/rectangle_one"
+                android:fontFamily="@font/product_sans_regular"
+                android:hint="Alamat"
+                android:includeFontPadding="true"
+                android:inputType="text"
+                android:paddingStart="14.96dp"
+                android:singleLine="true"
+                android:textColor="#686868"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_nik"
+                tools:ignore="MissingConstraints,RtlSymmetry" />
+
+            <Spinner
+                android:id="@+id/sp_provinsi"
+                android:layout_width="300dp"
+                android:layout_height="51.43dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rectangle_one"
+                android:padding="7dp"
+                android:spinnerMode="dropdown"
+                android:theme="@style/spFont"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_jalan" />
+
+            <Spinner
+                android:id="@+id/sp_kota"
+                android:layout_width="300dp"
+                android:layout_height="51.43dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rectangle_one"
+                android:padding="7dp"
+                android:spinnerMode="dropdown"
+                android:theme="@style/spFont"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sp_provinsi" />
+
+            <Spinner
+                android:id="@+id/sp_kec"
+                android:layout_width="300dp"
+                android:layout_height="51.43dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rectangle_one"
+                android:padding="7dp"
+                android:spinnerMode="dropdown"
+                android:theme="@style/spFont"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sp_kota" />
+
+            <Spinner
+                android:id="@+id/sp_kel"
+                android:layout_width="300dp"
+                android:layout_height="51.43dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rectangle_one"
+                android:padding="7dp"
+                android:spinnerMode="dropdown"
+                android:theme="@style/spFont"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sp_kec" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_rt"
+                android:layout_width="70dp"
+                android:layout_height="51.43dp"
+                android:layout_below="@id/et_username"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="21.04px"
+                android:background="@drawable/rectangle_one"
+                android:fontFamily="@font/product_sans_regular"
+                android:hint="RT"
+                android:includeFontPadding="true"
+                android:inputType="number"
+                android:paddingStart="14.96dp"
+                android:singleLine="true"
+                android:textColor="#686868"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/sp_kel"
+                app:layout_constraintTop_toBottomOf="@+id/sp_kel"
+                tools:ignore="MissingConstraints,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_rw"
+                android:layout_width="70dp"
+                android:layout_height="51.43dp"
+                android:layout_below="@id/et_username"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="21.04px"
+                android:background="@drawable/rectangle_one"
+                android:fontFamily="@font/product_sans_regular"
+                android:hint="RW"
+                android:includeFontPadding="true"
+                android:inputType="number"
+                android:paddingStart="14.96dp"
+                android:singleLine="true"
+                android:textColor="#686868"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@id/et_rt"
+                app:layout_constraintEnd_toStartOf="@+id/et_postal_code"
+                app:layout_constraintTop_toBottomOf="@+id/sp_kel"
+                tools:ignore="MissingConstraints,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_postal_code"
+                android:layout_width="110dp"
+                android:layout_height="51.43dp"
+                android:layout_below="@id/et_username"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="21.04px"
+                android:background="@drawable/rectangle_one"
+                android:fontFamily="@font/product_sans_regular"
+                android:hint="Kode Pos"
+                android:includeFontPadding="true"
+                android:inputType="number"
+                android:paddingStart="14.96dp"
+                android:singleLine="true"
+                android:textColor="#686868"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@+id/sp_kel"
+                app:layout_constraintEnd_toEndOf="@id/sp_kel"
+                tools:ignore="MissingConstraints,RtlSymmetry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/product_sans_regular"
+                android:lines="2"
+                android:text="Buat Password\nuntuk akunmu"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@id/et_password"
+                app:layout_constraintStart_toStartOf="@id/et_password"
+                app:layout_constraintTop_toBottomOf="@id/et_rw" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_password"
+                android:layout_width="300dp"
+                android:layout_height="51.43dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="21.04px"
+                android:background="@drawable/rectangle_one"
+                android:fontFamily="@font/product_sans_regular"
+                android:hint="Password"
+                android:includeFontPadding="true"
+                android:inputType="textPassword"
+                android:paddingStart="14.96dp"
+                android:singleLine="true"
+                android:textColor="#686868"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@id/et_confirm_password"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="HardcodedText,MissingConstraints,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_confirm_password"
+                android:layout_width="300dp"
+                android:layout_height="51.43dp"
+                android:layout_below="@id/et_username"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="21.04px"
+                android:background="@drawable/rectangle_one"
+                android:fontFamily="@font/product_sans_regular"
+                android:hint="Konfirmasi Password"
+                android:includeFontPadding="true"
+                android:inputType="textPassword"
+                android:paddingStart="14.96dp"
+                android:singleLine="true"
+                android:textColor="#686868"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_password"
+                tools:ignore="MissingConstraints,RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_signup"
+                android:layout_width="300dp"
+                android:layout_height="54dp"
+                android:layout_below="@id/et_email"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="800px"
+                android:background="@drawable/button_shape"
+                android:fontFamily="@font/product_sans_bold"
+                android:lineHeight="22sp"
+                android:shadowColor="#8EC6E8"
+                android:text="Daftar"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_confirm_password"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/have_acc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="43px"
+                android:fontFamily="@font/product_sans_regular"
+                android:text="Sudah punya akun?"
+                android:textColor="#898989"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_signup"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="© 2023 ESDS Mobile"
+        android:textColor="#BBBBBB"
+        android:fontFamily="@font/product_sans_regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="18dp"
+        android:visibility="gone"
+        android:id="@+id/tv_copyright"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+        <!--    <ScrollView-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginTop="28dp"-->
+        <!--        android:id="@+id/sv_signup"-->
+        <!--        app:layout_constraintTop_toTopOf="parent"-->
+        <!--        tools:ignore="MissingConstraints"-->
+        <!--        tools:layout_editor_absoluteX="16dp">-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_detection"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:text="Ayo deteksi stunting dini!"
+                    android:textAlignment="textStart"
+                    android:textColor="#000000"
+                    android:textSize="40sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="80dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tv_sub_title_detect"
+                    tools:ignore="MissingConstraints,RtlCompat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_sub_title_detect"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:lines="2"
+                    android:text="Masukkan data antropometri \nanak"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_detection"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintBottom_toTopOf="@id/sp_jenis_kelamin"
+                    app:layout_constraintStart_toStartOf="@id/sp_jenis_kelamin" />
+
+                <Spinner
+                    android:id="@+id/sp_jenis_kelamin"
+                    android:layout_width="300dp"
+                    android:layout_height="51.43dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="21.04px"
+                    android:background="@drawable/rectangle_one"
+                    android:padding="7dp"
+                    android:spinnerMode="dropdown"
+                    android:theme="@style/spFont"
+                    app:layout_constraintBottom_toTopOf="@id/et_usia"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:entries="@array/jenis_kelamin_anak"
+                    android:prompt="@string/jenis_kelamin_prompt"
+                    tools:ignore="HardcodedText,MissingConstraints,RtlSymmetry"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_usia"
+                    android:layout_width="300dp"
+                    android:layout_height="51.43dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="21.04px"
+                    android:background="@drawable/rectangle_one"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:hint="Usia (dalam bulan)"
+                    android:includeFontPadding="true"
+                    android:inputType="number"
+                    android:paddingStart="14.96dp"
+                    android:singleLine="true"
+                    android:textColor="#686868"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sp_jenis_kelamin"
+                    tools:ignore="MissingConstraints,RtlSymmetry" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_bb"
+                    android:layout_width="300dp"
+                    android:layout_height="51.43dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="21.04px"
+                    android:layout_marginTop="21.04px"
+                    android:background="@drawable/rectangle_one"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:hint="Berat Badan (dalam kilogram)"
+                    android:includeFontPadding="true"
+                    android:inputType="number"
+                    android:paddingStart="14.96dp"
+                    android:singleLine="true"
+                    android:textColor="#686868"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_usia"
+                    tools:ignore="HardcodedText,MissingConstraints,RtlSymmetry" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_tb"
+                    android:layout_width="300dp"
+                    android:layout_height="51.43dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="21.04px"
+                    android:background="@drawable/rectangle_one"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:hint="Tinggi Badan (dalam cm)"
+                    android:includeFontPadding="true"
+                    android:inputType="number"
+                    android:paddingStart="14.96dp"
+                    android:singleLine="true"
+                    android:textColor="#686868"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_bb"
+                    tools:ignore="MissingConstraints,RtlSymmetry" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_detection"
+                    android:layout_width="300dp"
+                    android:layout_height="54dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="800px"
+                    android:background="@drawable/button_shape"
+                    android:fontFamily="@font/product_sans_bold"
+                    android:lineHeight="22sp"
+                    android:shadowColor="#8EC6E8"
+                    android:text="Deteksi Sekarang!"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_tb"
+                    tools:ignore="MissingConstraints" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_detected"
+                    android:layout_width="300dp"
+                    android:layout_height="54dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="800px"
+                    android:background="@drawable/button_shape_green"
+                    android:fontFamily="@font/product_sans_bold"
+                    android:lineHeight="22sp"
+                    android:visibility="visible"
+                    android:shadowColor="#8EC6E8"
+                    android:text="Tidak terdeteksi stunting"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btn_detection"
+                    tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--    </ScrollView>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

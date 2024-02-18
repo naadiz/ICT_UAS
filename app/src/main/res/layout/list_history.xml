@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_radius"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/history_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/inter_semibold"
+            android:paddingStart="15dp"
+            android:text="Rabu, 1 Juni 2022"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:paddingBottom="15dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/iv_drop"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@id/history_date"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/ic_dropdown"/>
+
+        <TextView
+            android:id="@+id/tv_title_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/history_date"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter_semibold"
+            android:paddingStart="15dp"
+            android:text="Nama Anak"
+            android:textSize="10sp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/get_name"
+            android:layout_below="@+id/tv_title_nama"
+            android:text="John Doe"
+            android:textSize="20sp"
+            android:paddingStart="15dp"
+            android:fontFamily="@font/inter_semibold"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title_gender"
+            android:layout_below="@id/get_name"
+            android:text="Jenis Kelamin"
+            android:textSize="10sp"
+            android:paddingStart="15dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter_semibold"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/get_gender"
+            android:layout_below="@+id/tv_title_gender"
+            android:text="Laki-laki"
+            android:textSize="20sp"
+            android:paddingStart="15dp"
+            android:fontFamily="@font/inter_semibold"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_title_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/get_gender"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter_semibold"
+            android:paddingStart="15dp"
+            android:text="Tanggal Lahir"
+            android:textSize="10sp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/get_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title_dob"
+            android:fontFamily="@font/inter_semibold"
+            android:paddingStart="15dp"
+            android:text="6 Juni 2021"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_title_tb_bb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/get_dob"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter_semibold"
+            android:paddingStart="15dp"
+            android:text="TB/BB"
+            android:textSize="10sp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/get_tb_bb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title_tb_bb"
+            android:fontFamily="@font/inter_semibold"
+            android:paddingStart="15dp"
+            android:text="80cm/9.8kg"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:id="@+id/cv_history"
+            app:cardCornerRadius="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/history_date"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_radius"
+            android:layout_marginEnd="40dp">
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/iv_history"
+                android:src="@drawable/image_one_history"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_detected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cv_history"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/button_shape_red"
+            android:fontFamily="@font/product_sans_bold"
+            android:lineHeight="22sp"
+            android:shadowColor="#86D9B0"
+            android:text="John Doe tidak terdeteksi stunting"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:ignore="MissingConstraints" >
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/product_sans_bold"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:id="@+id/tv_stn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btn_detected_action"
+                android:layout_marginStart="15dp"
+                android:text="Terdeteksi stunting, diduga karena faktor ibu (anemia)"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/product_sans_bold"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:id="@+id/tv_not_stn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:visibility="gone"
+                android:text="Tidak terdeteksi stunting"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_detected_action"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:fontFamily="@font/product_sans_bold"
+                android:background="@drawable/button_shape_white"
+                android:textAllCaps="false"
+                android:textColor="#717171"
+                android:textSize="11sp"
+                app:layout_constraintStart_toEndOf="@+id/tv_stn"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="Ajukan Rujukan"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</LinearLayout>
